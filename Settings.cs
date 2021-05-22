@@ -64,7 +64,7 @@ namespace MoreWorkbenches
 		}
 		private static void CreateWorkbench(WorkbenchLocation workbenchLocation)
 		{
-			workbench = Preloader.PreloadingManager.GetInstance("INTERACTIVE_WorkBenchB");
+			workbench = Implementation.GetNewWorkbenchInstance();
 			if (workbench is null) return;
 
 			switch (workbenchLocation)
